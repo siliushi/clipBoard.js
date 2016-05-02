@@ -74,3 +74,6 @@ var cut = new clipBoard(document.getElementById('data'));
 cut.cut();
 ```
 > document.getElementById('data') is the paste target, you can also use it with jquery  $('#data')
+
+
+[NEW ISSUE](https://github.com/baixuexiyang/clipBoard.js/issues/new)
