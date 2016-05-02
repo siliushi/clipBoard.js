@@ -40,7 +40,7 @@ var cut = new clipBoard(document.getElementById('data'), {
 	beforeCut: function() {
 		
 	},
-	Cut: function() {
+	cut: function() {
 		return document.getElementById('data').value;
 	},
 	afterCut: function() {
@@ -56,22 +56,22 @@ cut.cut();
 
 ### paste
 ```
-var cut = new clipBoard(document.getElementById('data'), {
-	beforeCut: function() {
+var paste = new clipBoard(document.getElementById('data'), {
+	beforePaste: function() {
 		
 	},
-	Cut: function() {
+	paste: function() {
 		return document.getElementById('data').value;
 	},
-	afterCut: function() {
+	afterPaste: function() {
 
 	}
 });
 ```
 or
 ```
-var cut = new clipBoard(document.getElementById('data'));
-cut.cut();
+var paste = new clipBoard(document.getElementById('data'));
+paste.paste();
 ```
 > document.getElementById('data') is the paste target, you can also use it with jquery  $('#data')
 
