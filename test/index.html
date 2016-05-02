@@ -5,7 +5,7 @@
     <title>test</title>
 </head>
 <body>
-    <input type="text" id="data" value="测试数据">
+    <input type="text" id="data" value="剪切板">
     <button id="copy">复制</button>
     <button id="cut">剪切</button>
     <!--[if IE]>
@@ -22,11 +22,13 @@
     document.getElementById('copy').onclick = function() {
     	var test = new clipBoard(document.getElementById('data'), {
     		beforeCopy: function() {
-    		},
-    		copy: function() {
-    			return document.getElementById('data').value;
-    		},
-    		afterCopy: function() {
+                alert('开始复制');
+            },
+            copy: function() {
+                return document.getElementById('data').value;
+            },
+            afterCopy: function() {
+                alert('复制成功！');
     		}
     	});
     };
