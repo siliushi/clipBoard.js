@@ -3,13 +3,14 @@ with javascript operating clipboard, copy、cut and paste.
 
 # example
 
+<div>
 <input type="text" id="data" value="剪切板">
 <button id="copy">复制</button>
 <button id="cut">剪切</button>
 <!--[if IE]>
 <button id="paste">粘贴</button>
 <![endif]-->
-<script src="../clipBoard.min.js"></script>
+<script src="clipBoard.min.js"></script>
 <script>
 /**
 * 复制、剪切：chrome、Firefox、ie
@@ -37,7 +38,7 @@ var a = new clipBoard(document.getElementById('data'), {});
 a.paste();
 };
 </script>
-
+</div>
 
 # support
 |               | copy   |  cut    |  paste   |
